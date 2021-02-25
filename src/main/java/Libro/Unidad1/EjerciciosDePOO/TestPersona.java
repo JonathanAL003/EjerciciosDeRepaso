@@ -25,6 +25,10 @@ public class TestPersona
          }
         System.out.println("Introduce tu sexo (H o M): ");
         char sx = scanner.next().charAt(0);
+        if (sx != 'H' && sx!='M') 
+        {
+            sx = 'H';
+        }
         System.out.println("Introduce tu peso: ");
         double p = scanner.nextDouble();
         if (p<1) 
